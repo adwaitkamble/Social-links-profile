@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    @keyframes ripple {
+      to {
+        transform: translate(-50%, -50%) scale(4);
+        opacity: 0;
+      }
+    }
+
+    @keyframes wobble {
+      25% {
+        transform: rotate(-5deg) scale(1.1);
+      }
+
+      50% {
+        transform: rotate(5deg) scale(1.1);
+      }
+
+      75% {
+        transform: rotate(-3deg) scale(1.05);
+      }
+
+      100% {
+        transform: rotate(0deg) scale(1);
+      }
+    }
+  </style>
+
+</head>
+
+<script src="./script.js"></script>
+
+<body>
+  <main class="card">
+    <img class="avatar" src="./assets/images/adwait photo.jpg" alt="Adwait Kamble">
+    <h1>Adwait Kamble</h1>
+    <p class="location">Pune, Maharashtra</p>
+    <p class="bio">"Front-end developer and avid reader."</p>
+    <ul class="social-links">
+      <li><a href="https://github.com/adwaitkamble" target="_blank">GitHub</a></li>
+      <li><a href="#">Frontend Mentor</a></li>
+      <li><a href="https://www.linkedin.com/in/adwait-kamble-95445428b/" target="_blank">LinkedIn</a></li>
+
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    max-width: 384px;
+    width: 90%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.6s ease-out;
+}
+
+.avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    border: 2px solid hsl(0, 0%, 20%);
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.avatar:hover {
+    border-color: hsl(75, 94%, 57%);
+    transform: scale(1.08);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.location {
+    color: hsl(75, 94%, 57%);
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin-bottom: 24px;
+}
+
+.bio {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-links li {
+    animation: slideUp 0.4s ease-out backwards;
+}
+
+.social-links li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.social-links li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.social-links li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.social-links li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.social-links li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.social-links a {
+    display: block;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    transform: scale(1.03);
+    box-shadow: 0 0 12px hsla(75, 94%, 57%, 0.3);
+}
+
+.social-links a:active {
+    transform: scale(0.97);
+}
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
